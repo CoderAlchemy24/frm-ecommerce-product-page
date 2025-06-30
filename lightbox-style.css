@@ -1,0 +1,141 @@
+
+
+.lightbox{
+
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5,5,5,0.75);
+    color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+      margin: 1rem auto;
+  
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.close-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+    align-items: center;
+    ;
+    z-index:5;  
+    padding: 0.5rem;
+    border-radius: 50%;
+
+    margin:0.5rem 0.1rem 0.5rem 21rem;
+
+
+    background-color: transparent;
+    border:none;
+}
+
+.close-button svg{
+    position: relative;
+    top: 0.1rem;
+    left: 0.15rem;
+    fill: white;
+}
+
+.close-button:hover{
+    background-color: transparent;
+     cursor: pointer;
+}
+
+.close-button:hover svg{
+    fill: red;
+    
+}
+
+.close-button svg{
+    width: 20px;
+    height: 20px;
+}
+
+.box-content{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    max-width: 25rem;
+    margin-top: 2rem;
+}
+
+.main-row{
+    grid: 1/ 1/ 2 / 3;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.thumbnails{
+    grid: 2 / 2 / 3 / 3;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.main-row img{
+    width:360px;
+    height: auto;
+
+}
+
+.thumbnails img{
+    width: 60px;
+    height: auto;
+}
+
+.thumbnails img:hover{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.thumbnails img.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.arrow-left-wrapper, .arrow-right-wrapper{
+    width: 40px;
+    height: 40px;
+    background-color: hsl(240, 2%, 79%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   cursor: pointer;
+
+}
+
+.arrow-left-wrapper{
+    margin-right: -10%;
+    z-index:3
+}
+
+.arrow-right-wrapper{
+    margin-left:-10%;
+    z-index:3;
+}
+
+.arrow-left-wrapper:hover svg path,
+.arrow-right-wrapper:hover svg path{
+   stroke: #FF7E1B;
+}
+
