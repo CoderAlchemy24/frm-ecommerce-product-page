@@ -9,7 +9,7 @@ const closeButton2 = document.querySelector(".close-button");
 
 const incrementButton = document.querySelector(".increasing-icon");
 const decrementButton = document.querySelector(".decreasing-icon");
-const quantityElement = document.querySelector(".quantity");
+
 
 const addToCartButton = document.querySelector(".add-to-cart-button");
 const cartContent = document.querySelector(".cart-content");
