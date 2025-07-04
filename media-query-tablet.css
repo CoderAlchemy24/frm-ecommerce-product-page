@@ -171,11 +171,11 @@
     .left-side-menu div{
          display: block;
     flex-direction: row;
-    justify-content: flex-end;
+    /* justify-content: flex-end;
  
-    align-items: center;
-    
-    z-index:11;  
+    align-items: center; */
+
+    z-index: 11;
     padding: 0.5rem;
     border-radius: 50%;
 
