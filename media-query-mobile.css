@@ -14,6 +14,10 @@
         gap: 0.7rem;
     }
 
+    .hambi{
+        display: block;
+    }
+
     .header-right {
         gap: 0.5rem;
     }   
