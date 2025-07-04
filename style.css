@@ -84,7 +84,8 @@ header{
     margin: 1.75rem auto 2rem
 }
 
-.hambi{display: none;}
+.hambi{
+    display: none;}
 
 
 
@@ -221,7 +222,13 @@ main{
 }
 
 .small-image:hover{
-    opacity: 0.6;
+    opacity: 0.55;
+}
+
+.small-image.disabled{
+
+    border: 3px solid var(--color-orange-500);
+    opacity: 0.5;
 }
 
 .section-2{
@@ -380,6 +387,7 @@ p.quantity{
     position: absolute;
     left: calc(width - 3 * fit-content);
     top: calc(height - 2 * fit-content);
+ 
 }
 
 .cart-content{

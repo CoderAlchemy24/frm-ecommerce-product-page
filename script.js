@@ -23,7 +23,7 @@ let itemCounter = 0;
 let cartItems = [];
 
 hamburgerMenu.addEventListener("click", () => {
-    if (viewportWidth < 1024) {
+    if (viewportWidth <= 1024) {
         leftSideMenu.style.display = "flex";
     } else {
         leftSideMenu.style.display = "none";
@@ -31,7 +31,7 @@ hamburgerMenu.addEventListener("click", () => {
 })
 hamburgerMenu.addEventListener("keydown", (e) => {
     if (e.key === "Enter" || e.key === " ") {
-        if (viewportWidth < 1024) {
+        if (viewportWidth <= 1024) {
             leftSideMenu.style.display = "flex";
         } else {
             leftSideMenu.style.display = "none";
@@ -76,6 +76,7 @@ smallImages.forEach((image, index) => {
             changeImage();
             lightbox.style.display = "flex";
         }
+
     })
 })
 
@@ -114,6 +115,7 @@ const mainArrowRight = document.getElementById("main-arrow-right");
 
 
 thumbImgs[0].classList.add('disabled');
+smallImages[0].classList.add('disabled');
 
 
 if (arrowLeft) arrowLeft.addEventListener("click", ()=> { setPrevious();});
